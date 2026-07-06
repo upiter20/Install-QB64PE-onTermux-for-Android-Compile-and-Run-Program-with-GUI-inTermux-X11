@@ -1,6 +1,7 @@
 # Install-QB64PE-onTermux-for-Android-Compile-and-Run-Program-with-GUI-inTermux-X11
 This is manual on how to Install QB64PE on Termux for Android, Compile and Run Program with GUI in Termux-X11
-For aarch64!!!
+
+For AARCH64!!!
 
 Install Termux for Android from F-Droid, not from Google Play.
 https://f-droid.org/packages/com.termux/
@@ -17,12 +18,17 @@ Open Termux terminal and install root-repo and X11-repo.
 
 
 Use command "pkg install" to get these packages:
-qb64/x11 for aarch64
-freeglut/x11
-mesa-dev/stable
-termux-x11-nightly
+build-essential
+alsa-lib/stable
+glu/x11
+libcurl-static/stable
+libpng-static
+mesa-dev
+
 
 More information on sample screenshots
+<img width="1080" height="2340" alt="Mesa-Dev" src="https://github.com/user-attachments/assets/0be25dc6-319a-4287-8c2d-e7adaf5609bd" />
+<img width="1080" height="2340" alt="Build-Essential" src="https://github.com/user-attachments/assets/9e36a563-1dce-43b5-953a-3aef944a3516" />
 
 
 
@@ -31,18 +37,37 @@ pkg install mc
 
 
 Copy QB64PE for Linux in Termux folder /home
+<img width="1080" height="2340" alt="qb64pe in termux home" src="https://github.com/user-attachments/assets/1f5baae0-cae0-4511-b9ac-5ddc9b10e892" />
+
+
 
 Type command "mc" in Termux and after Midnight Commander is opened 
-go To the folder /usr/share/qb64/intternal/c and find these files:
-
-makedat_lnx64.txt
-makeline_lnx.txt
-makeline_lnx_nogui.txt
-
-Modify these files as it is marked on these screenshots:
+go to the folder /qb64pe and find make file:
 
 
 
+Modify this file as it is marked on these screenshots:
+<img width="1080" height="2340" alt="replace C++ standart" src="https://github.com/user-attachments/assets/86ca22b0-c723-49a9-866b-71571ac881bd" />
+<img width="1080" height="2340" alt="PIE and 64Bits" src="https://github.com/user-attachments/assets/f0c6ed13-c4a3-4ab7-975e-c7812314c069" />
+<img width="1080" height="2340" alt="ELF architect" src="https://github.com/user-attachments/assets/462012c1-9bdf-48d2-bf72-ac85410e2aae" />
+
+
+Go to folder /qb64pe/internal/c/parts/video/font/freetype and find these files
+inffast.h
+inftrees.h
+
+Modify this file as it is marked on these screenshots:
+<img width="1080" height="2340" alt="inffast correct" src="https://github.com/user-attachments/assets/5817c4bc-b2fb-4f92-a0c3-f64340d5f8ef" />
+<img width="1080" height="2340" alt="inftrees correct" src="https://github.com/user-attachments/assets/cb863034-104e-48cc-b6e6-2a6dc129ab31" />
+
+Go to folder /qb64pe and type command "chmod +xr setup_lnx.sh"
+to make setup_lnx.sh executable
+
+
+<img width="1080" height="2340" alt="chmod setup_lnx" src="https://github.com/user-attachments/assets/71549dc8-7842-4b39-9bc4-46bd7f5becb5" />
+
+
+Run setup_lnx.sh.
 
 To check compilation I have used these files:
 
