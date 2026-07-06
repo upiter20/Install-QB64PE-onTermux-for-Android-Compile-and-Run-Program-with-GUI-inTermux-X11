@@ -90,7 +90,9 @@ Download and place .bas files in Termux folder "/home/qb64pe"
 
 
 Check compilation of the sample files according to screenshot.
-<img width="1080" height="2340" alt="Check_Compilation" src="https://github.com/user-attachments/assets/00cd85f3-355c-46d6-ae68-bd7c83cc3f27" />
+<img width="1080" height="2340" alt="3dballscompile" src="https://github.com/user-attachments/assets/e4caf4dc-6944-4962-8bdb-464abfd32dbc" />
+<img width="1080" height="2340" alt="acalcCompile" src="https://github.com/user-attachments/assets/947ee7b5-36cc-4c73-a4bd-fe8b49eef6b8" />
+
 
 
 Compiled files are placed in folder /home/qb64pe for *.bas files 
@@ -118,7 +120,7 @@ so just press Enter to proceed.
 
 Go to Termux-x11 app to see result for each sample. 
 
-<img width="1080" height="2340" alt="InForm_OnX11" src="https://github.com/user-attachments/assets/96cc3d08-504a-40d9-b03e-f23c029bba27" />
+
 <img width="1080" height="2340" alt="acalc_OnX11" src="https://github.com/user-attachments/assets/04522c22-c40d-48ee-8352-be750886b57c" />
 <img width="1080" height="2340" alt="3dBalls_OnX11" src="https://github.com/user-attachments/assets/c22978bf-a12e-4732-935c-0360ba24c61b" />
 
