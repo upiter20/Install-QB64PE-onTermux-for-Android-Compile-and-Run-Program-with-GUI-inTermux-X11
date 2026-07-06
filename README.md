@@ -69,6 +69,11 @@ to make setup_lnx.sh executable
 
 Run setup_lnx.sh.
 
+The new executable file "qb64pe" wil be created as it shown on screenshot.
+<img width="1080" height="2340" alt="compile done" src="https://github.com/user-attachments/assets/c5be9196-4572-4840-937d-7cef6c2bc745" />
+
+
+
 To check compilation I have used these files:
 
 3dballs.bas
