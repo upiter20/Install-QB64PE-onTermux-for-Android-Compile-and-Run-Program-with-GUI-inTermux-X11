@@ -24,7 +24,7 @@ glu/x11
 libcurl-static/stable
 libpng-static
 mesa-dev
-
+termux-x11-nightly
 
 More information on sample screenshots
 <img width="1080" height="2340" alt="Mesa-Dev" src="https://github.com/user-attachments/assets/0be25dc6-319a-4287-8c2d-e7adaf5609bd" />
@@ -42,17 +42,17 @@ Copy QB64PE for Linux in Termux folder /home
 
 
 Type command "mc" in Termux and after Midnight Commander is opened 
-go to the folder /qb64pe and find make file:
+go to the folder /qb64pe and find "Makefile":
 
 
 
-Modify this file as it is marked on these screenshots:
+Modify "Makefile" as it is marked on these screenshots:
 <img width="1080" height="2340" alt="replace C++ standart" src="https://github.com/user-attachments/assets/86ca22b0-c723-49a9-866b-71571ac881bd" />
 <img width="1080" height="2340" alt="PIE and 64Bits" src="https://github.com/user-attachments/assets/f0c6ed13-c4a3-4ab7-975e-c7812314c069" />
 <img width="1080" height="2340" alt="ELF architect" src="https://github.com/user-attachments/assets/462012c1-9bdf-48d2-bf72-ac85410e2aae" />
 
 
-Go to folder /qb64pe/internal/c/parts/video/font/freetype and find these files
+Go to folder /qb64pe/internal/c/parts/video/font/freetype and find these files:
 inffast.h
 inftrees.h
 
@@ -80,17 +80,20 @@ To check compilation I have used these files:
 acalc.bas
 https://qb64.com/samples.html
 
-Stopwatch - from Inform Samples
-https://github.com/FellippeHeitor/InForm-demos/tree/master/Stopwatch
+
 
 Download and place .bas files in Termux folder "/home/qb64pe"
-Plase Stopwatch folder of Inform sample in "/home/qb64pe"
+
+
+
+
+
 
 Check compilation of the sample files according to screenshot.
 <img width="1080" height="2340" alt="Check_Compilation" src="https://github.com/user-attachments/assets/00cd85f3-355c-46d6-ae68-bd7c83cc3f27" />
 
 
-Compiled files are placed in folder /home/qb64pe for *.bas files and in stopwatch folder for Inform sample
+Compiled files are placed in folder /home/qb64pe for *.bas files 
 
 Resume but do not exit from Termux.
 
@@ -104,11 +107,16 @@ Go to Preferences-Output of Termux-x11 and set Display Scale to 200%.
 
 Go back to Termux folder /home/qb64
 
-Create the bash script to run GUI program.
-<img width="1080" height="2340" alt="script_to_launch_inX11" src="https://github.com/user-attachments/assets/3c79e2a1-2e82-4c1a-adc5-f838f1905b5f" />
+Create the bash script to run program with GUI.
 
 
-Run bash script and go to Termux-x11 app to see result for each sample. 
+
+Run bash script and see the error about Missing GL version. 
+
+This error is somewere inside source code of qb64pe, 
+so just press Enter to proceed.
+
+Go to Termux-x11 app to see result for each sample. 
 
 <img width="1080" height="2340" alt="InForm_OnX11" src="https://github.com/user-attachments/assets/96cc3d08-504a-40d9-b03e-f23c029bba27" />
 <img width="1080" height="2340" alt="acalc_OnX11" src="https://github.com/user-attachments/assets/04522c22-c40d-48ee-8352-be750886b57c" />
@@ -116,8 +124,16 @@ Run bash script and go to Termux-x11 app to see result for each sample.
 
 
 
+As to Inform project, I have tried to compile this sample - Stopwatch
+https://github.com/FellippeHeitor/InForm-demos/tree/master/Stopwatch
 
+I placed Stopwatch .bas file and folder "Inform" into the folder "/home/qb64pe" as it is shown on screenshot
+<img width="1080" height="2340" alt="StopWatchInform" src="https://github.com/user-attachments/assets/961b5679-5633-4291-86f6-79cee10c4614" />
 
-Inform sample is displayed in Termux-11 partly, because I failed to get library from "falcon.h". 
-Compiler said that it is impossible for header file.
-However, this sample proves that Inform app could be displayed too.
+But compilation failed because there is no implementation for function "Message Box".
+
+More information on screenshots.
+<img width="1080" height="2340" alt="StopwatchCompile" src="https://github.com/user-attachments/assets/90337aef-f61b-405d-8b70-17b7dee9e5bd" />
+
+<img width="1080" height="2340" alt="NoMessageBox" src="https://github.com/user-attachments/assets/18703afb-3439-4638-97b9-2befee72579d" />
+
