@@ -26,17 +26,13 @@ libpng-static
 mesa-dev
 termux-x11-nightly
 
-More information on sample screenshots
-<img width="1080" height="2340" alt="Mesa-Dev" src="https://github.com/user-attachments/assets/0be25dc6-319a-4287-8c2d-e7adaf5609bd" />
-<img width="1080" height="2340" alt="Build-Essential" src="https://github.com/user-attachments/assets/9e36a563-1dce-43b5-953a-3aef944a3516" />
-
 
 
 Install Midnight Commander 
 pkg install mc
 
 
-Copy QB64PE for Linux in Termux folder /home
+Copy QB64PE for Linux into Termux folder '/home'
 <img width="1080" height="2340" alt="qb64pe in termux home" src="https://github.com/user-attachments/assets/1f5baae0-cae0-4511-b9ac-5ddc9b10e892" />
 
 
@@ -69,7 +65,7 @@ to make setup_lnx.sh executable
 
 Run setup_lnx.sh.
 
-The new executable file "qb64pe" wil be created as it shown on screenshot.
+The new executable file "qb64pe" wil be created as it is shown on screenshot.
 <img width="1080" height="2340" alt="compile done" src="https://github.com/user-attachments/assets/c5be9196-4572-4840-937d-7cef6c2bc745" />
 
 
@@ -89,7 +85,7 @@ Download and place .bas files in Termux folder "/home/qb64pe"
 
 
 
-Check compilation of the sample files according to screenshot.
+Check compilation of the sample files according to screenshots.
 <img width="1080" height="2340" alt="3dballscompile" src="https://github.com/user-attachments/assets/e4caf4dc-6944-4962-8bdb-464abfd32dbc" />
 <img width="1080" height="2340" alt="acalcCompile" src="https://github.com/user-attachments/assets/947ee7b5-36cc-4c73-a4bd-fe8b49eef6b8" />
 
@@ -107,9 +103,10 @@ Open Termux-11 standalone application on the smartphone.
 Go to Preferences-Output of Termux-x11 and set Display Scale to 200%.
 <img width="1080" height="2340" alt="SetScalling" src="https://github.com/user-attachments/assets/c5a42552-1131-40f7-ab6a-7026ed120c6a" />
 
-Go back to Termux folder /home/qb64
+Go back to Termux folder /home/qb64pe
 
 Create the bash script to run program with GUI.
+<img width="1080" height="2340" alt="1783347012936" src="https://github.com/user-attachments/assets/aa88dd14-ba8f-41ec-a885-b23194b5fded" />
 
 
 
@@ -117,6 +114,9 @@ Run bash script and see the error about Missing GL version.
 
 This error is somewere inside source code of qb64pe, 
 so just press Enter to proceed.
+<img width="1080" height="2340" alt="1783347012870" src="https://github.com/user-attachments/assets/bc596dcc-9ac4-4f7a-a82e-b75aec12d95d" />
+
+
 
 Go to Termux-x11 app to see result for each sample. 
 
@@ -132,7 +132,7 @@ https://github.com/FellippeHeitor/InForm-demos/tree/master/Stopwatch
 I placed Stopwatch .bas file and folder "Inform" into the folder "/home/qb64pe" as it is shown on screenshot
 <img width="1080" height="2340" alt="StopWatchInform" src="https://github.com/user-attachments/assets/961b5679-5633-4291-86f6-79cee10c4614" />
 
-But compilation failed because there is no implementation for function "Message Box".
+But compilation failed because there is no implementation for function "MessageBox".
 
 More information on screenshots.
 <img width="1080" height="2340" alt="StopwatchCompile" src="https://github.com/user-attachments/assets/90337aef-f61b-405d-8b70-17b7dee9e5bd" />
